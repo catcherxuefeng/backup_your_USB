@@ -71,6 +71,7 @@ ExecStart = curl "https://wx.xtuis.cn/123123123123123123.send?text=arm_work_u_ba
 WantedBy = multi-user.target
 # 启动服务是指生效
 systemctl daemon-reload
-systemctl enable --now  work_u_backup.service
+# 无需自启动 work_u_backup.service 
+# systemctl enable --now  work_u_backup.service
 systemctl enable --now work_u_backup.path 
 ```
